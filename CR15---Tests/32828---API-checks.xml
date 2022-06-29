@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="5e9d0d3f-c1d3-4b4d-9def-ced521350ab8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="32828 - API checks" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5e9d0d3f-c1d3-4b4d-9def-ced521350ab8fileName">32828---API-checks</con:setting></con:settings><con:testStep type="restrequest" name="Scenario 1" id="c311909c-da9a-4118-88e3-79c2d330df7f"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 1" id="d8915b14-7ef1-453c-9b5d-d488a0146362" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Wkmehh",
+"lastName": "Teagkem",
+"email": "ekmte.teagkem@kekmte.qkr.eyb",
+"address1": "945 Wahhzknnkh",
+"postCode": "FA1 5E",
+"telephone": "0",
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:assertion type="Simple Contains" id="bf738f13-0cbd-49a9-82c5-1318641ef19b" name="Contains"><con:configuration><token>{"OwnerID":"CO004256","PrimaryID":"1326375"}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 2" id="2b2fe25c-f27d-4432-bf56-1d884ae38324"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 2" id="b9615072-e33d-4485-9c6b-bf30bbf32ded" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Wkmehh",
+"lastName": "Teagkem",
+"email": "Wrong.email@test.com",
+"address1": "945 Wahhzknnkh",
+"postCode": "FA1 5E",
+"mobile": "07159755826",
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:assertion type="Simple Contains" id="da6b8740-b75d-418e-bfcb-d3443aaec3ee" name="Contains"><con:configuration><token>{"OwnerID":"CO004256","PrimaryID":"1326375"}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 3" id="b9fc5b1b-df85-4f8c-978b-f6b961039c24"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 3" id="336a2057-0554-4759-887e-a2b73c0ded54" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Wkmehh",
+"lastName": "Teagkem",
+"email": "Wrong.email@test.com",
+"address1": "945 Wahhzknnkh",
+"postCode": "FALSE",
+"telephone": "01462868039"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:assertion type="Simple Contains" id="18567d7c-bb52-48be-b02c-fd997bda5607" name="Contains"><con:configuration><token>{"OwnerID":"CO004256","PrimaryID":"1326375"}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 4" id="2b132513-5aac-450a-950f-c3ce82bc89a1"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 4" id="c69b2631-9637-4352-a14e-a65c7099cf43" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Wkmehh",
+"lastName": "Teagkem",
+"email": "Wrong.email@test.com",
+"address1": "945 Wahhzknnkh",
+"postCode": "II97 7KT",
+"telephone": "0000000000",
+"ownerId": "CO004256"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:assertion type="Simple Contains" id="c890e0ac-0238-411e-b5cc-9cc5ec2200e9" name="Contains"><con:configuration><token>{"OwnerID":"CO004256","PrimaryID":"1326375"}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 5" id="9b831aa6-d223-4b62-b336-a232e7ce3112"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 5" id="c97e08ba-4d7a-40e3-8dc3-34bf8f4d0a09" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Wkmehh",
+"lastName": "Teagkem",
+"email": "Wrong.email@test.com",
+"address1": "945 Wahhzknnkh",
+"postCode": "II97 7KT",
+"telephone": "0000000000",
+"ownerId": "FAKEID"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 6" id="0eb31b35-8640-47d1-a277-6e6d644dd942"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 6" id="62844977-f438-4bc8-bbe4-9c83af3988b0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Steve",
+"lastName": "NonOwnerTest",
+"email": "nonowner@test.com",
+"address1": "1 Gosforth Park Way",
+"postCode": "NE12 8ET",
+"telephone": "01234567890",
+"ownerId": "FAKEID"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 7" id="bf29863a-efc9-4a0e-be04-7b220f66ba75"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 7" id="18486af1-10bc-4036-b593-25ec20da9c56" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Steve",
+"lastName": "NonOwnerTest",
+"email": "nonowner@test.com",
+"address1": "1 Gosforth Park Way",
+"postCode": "NE12 8ET",
+"telephone": "01234567890",
+"ownerId": "CO004256"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 8" id="c42998b8-faf4-4113-9af5-d3597ea5bc53"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 8" id="2208e340-308b-4e7a-a6ec-52faa305760c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mrs",
+"firstName": "Qekky",
+"lastName": "Tnwakw",
+"email": "tnwakw468@qtnwaqwe.eyb",
+"address1": "92 Eehhgahe",
+"postCode": "TG98 0NZ",
+"telephone": "07713454884"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 9" id="d745f3a8-5177-454b-86aa-306e3958f709"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 9" id="92289f52-5b1f-4130-867f-a75d81f82df4" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"firstName": "Wkmehh",
+"lastName": "Teagkem",
+"email": "ekmte.teagkem@kekmte.qkr.eyb",
+"address1": "945 Wahhzknnkh",
+"postCode": "II97 7KT",
+"telephone": "1462868039",
+"ownerId": "CO004256"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 10" id="764139ad-8341-4279-9da2-c79a11a904f2"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 10" id="57ea831e-9dfd-47bd-89b7-2433336fde0b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"lastName": "Teagkem",
+"email": "ekmte.teagkem@kekmte.qkr.eyb",
+"address1": "945 Wahhzknnkh",
+"postCode": "II97 7KT",
+"telephone": "1462868039",
+"ownerId": "CO004256"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 11" id="1af5403c-ab15-4b7d-828f-09ce786b7828"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 11" id="53c56302-26c5-4401-a42c-8b93415cba6e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Wkmehh",
+"email": "ekmte.teagkem@kekmte.qkr.eyb",
+"address1": "945 Wahhzknnkh",
+"postCode": "II97 7KT",
+"telephone": "1462868039",
+"ownerId": "CO004256"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 12" id="53bebeff-6899-40cb-9165-e770b0e6ee73"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 12" id="5cd4452f-aab0-40b1-a73d-7fb361105213" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Wkmehh",
+"lastName": "Teagkem",
+"address1": "945 Wahhzknnkh",
+"postCode": "II97 7KT",
+"telephone": "1462868039",
+"ownerId": "CO004256"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 13" id="c4282a76-e79e-471e-9666-f65e8b90c3d5"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 13" id="bb94f34f-fc26-4cf6-9d44-1817ad597395" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Wkmehh",
+"lastName": "Teagkem",
+"email": "ekmte.teagkem@kekmte.qkr.eyb",
+"address1": "945 Wahhzknnkh",
+"postCode": "II97 7KT",
+"ownerId": "CO004256"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 14" id="cf919989-4b87-4d59-a891-3ff389d03837"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 14" id="77f259e2-5a54-4f43-99bc-34884c3607ab" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Wkmehh",
+"lastName": "Teagkem",
+"email": "ekmte.teagkem@kekmte.qkr.eyb",
+"postCode": "II97 7KT",
+"telephone": "1462868039",
+"ownerId": "CO004256"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 15" id="8c49286a-70e8-456f-9ed2-e845734b07c4"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 15" id="b0bfc130-f3ec-4924-a5e8-70f301e04412" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Wkmehh",
+"lastName": "Teagkem",
+"email": "ekmte.teagkem@kekmte.qkr.eyb",
+"address1": "945 Wahhzknnkh",
+"telephone": "1462868039",
+"ownerId": "CO004256"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 16" id="a4fd1609-242c-4fd3-afd6-f8f6390c2bfd"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 16" id="3bd12caf-cd49-443d-a730-4e6f4ff642f1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request>{
+"title": "Mr",
+"firstName": "Wkmehh",
+"lastName": "Teagkem",
+"email": "ekmte.teagkem@kekmte.qkr.eyb",
+"address1": "945 Wahhzknnkh",
+"postCode": "II97 7KT",
+"telephone": "1462868039",
+"ownerId": "CO004256"
+}</con:request><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="Ocp-Apim-Subscription-Key" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Scenario 17" id="e960e9ff-b396-40de-ade4-4f98f8cd183e"><con:settings/><con:config service="https://ais-preprod-api.parkdeanresorts.co.uk" methodName="1" resourcePath="/owners/v1/validateaccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Scenario 17" id="428569c4-0ddd-48c8-a1ba-386d5663bd14" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ais-preprod-api.parkdeanresorts.co.uk</con:endpoint><con:request/><con:originalUri>https://ais-preprod-api.parkdeanresorts.co.uk/owners/v1/validateaccount</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:entry key="Ocp-Apim-Subscription-Key" value="d234857473f84ce0959946f2d1cbe6d9"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

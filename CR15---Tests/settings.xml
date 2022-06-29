@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="38285c13-005c-417b-9f77-da5dda211d64" name="CR15 - Tests" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="38285c13-005c-417b-9f77-da5dda211d64fileName">CR15---Tests</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>
